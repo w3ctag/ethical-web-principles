@@ -43,7 +43,34 @@ var respecConfig = {
     inlineCSS: true,
     noIDLIn: true,
     noLegacyStyle: false,
-    localBiblio:  {
+localBiblio:  {
+"MozillaManifesto": {
+title: "Pledge for a Healthy Internet",
+href: "https://www.mozilla.org/en-US/about/manifesto/",
+publisher: "Mozilla",
+}
+
+"CoedEthics": {
+title: "Coed:Ethics — Building a New Conference in a New Area",
+href:
+"https://medium.com/@anne_e_currie/coed-ethics-building-a-new-conference-in-a-new-area-a7828e612e7",
+authors: [ "Anne Curie" ],
+}
+
+"UNHR" : {
+title: "UN Universal Declaration of Human Rights",
+href: "https://www.un.org/en/universal-declaration-human-rights/",
+publisher: "United Nations",
+}
+
+"DisabilityRights" : {
+title: "Convention on the Rights of Persons with Disabilities and
+Optional Protocol",
+href:
+"https://www.un.org/disabilities/documents/convention/convoptprot-e.pdf",
+publisher: "United Nations",
+}
+
         }
     };
     </script>
@@ -61,13 +88,126 @@ var respecConfig = {
     </section>
     <section id="intro">
       <h2>Introduction</h2>
-    <p>...</p>
-    </section>
+<p>
+The web has an inherent social mission: to enable communication and knowledge sharing for everyone and thereby to empower a more equitable, informed and interconnected society. In the 30 years since development of the web began, it has become clear that the web platform can often be used in a way that subverts that mission. Furthermore web technologies can be used to cause harm, which is not in keeping with the spirit of this social mission. The web should be a platform that helps people and provides a net positive social benefit. As we continue to evolve the web platform we must therefore consider the ethical implications of our work. The web must be for good.
+</p>
+<p>
+In order for the web to continue to be beneficial to society, we need
+to include more ethical thinking when we build web technologies,
+applications and sites. The web is made up of a number of technologies
+and technical standards. HTML, CSS and JavaScript are often thought of
+as the web’s core set of technologies but there are a raft of other
+technologies, standards, languages and APIs that come together to form
+the “web platform.” One of the web platform’s differentiators has
+always been a strong ethical framework; for example an emphasis on <a
+href="https://www.w3.org/International/">internationalization</a>, <a
+href="https://www.w3.org/WAI/">accessibility</a> and <a
+href="https://www.w3.org/Privacy/">privacy and security</a>. Web
+technologies are also offered <a href="https://www.w3.org/Consortium/Patent-Policy/">royalty free</a> to enable open source implementation, arguably an ethical choice that has been a factor in its success as a platform. These are often cited as some of the strengths of the web. 
+</p>
+<p>
+The architecture of the browser-based web is that of a user agent, the
+browser, that balances between the needs of the application developers
+and the people using those applications. This lends itself well
+towards this more ethical approach by allowing the person using the
+web to choose a browser that best meets their needs (for example, with
+strong privacy protections).
+</p>
+<p>
+The web should also support human rights, dignity and personal agency. We need to put internationally recognized human rights at the core of the web platform. And we need to promote ethical thinking across the web industry to reinforce this approach.
+</p>
+<p>
+The purpose of this document  is to inform TAG review of new specifications and to inform other documents such as the Design Principles, Security & Privacy Self-Review or other similar checklists and sets of principles used by specifications authors and editors. It also serves to raise awareness of the ethical responsibilities of web makers.
+</p>
+</section>
+<section id="principles">
+      <h2>Principles</h2>
+<dl>
+  <dt>There is one web</dt>
+  <dd><p>Technology should not enable regional or national
+    borders. People in one location should be able to view web pages
+    from anywhere that is connected to the web.</p></dd>
+
+  <dt>The web should not be a detriment to society</dt>
+  <dd><p>When considering adding a new web technology to the web, it
+    must be evaluated for the potential harm it could do to society,
+    including in the long term, and not only for its potential benefits
+    to web developers.</p></dd>
+
+  <dt>The web must support fundamental human rights</dt>
+  <dd><p>Internationally agreed documents, including the UN universal
+    declaration of human rights and the European Convention on Human
+    Rights, or the Council of Europe’s Convention 108 already set out
+    fundamental principles for the rights that must be respected. The
+    web must enable and not undermine these fundamental rights.</p></dd>
+
+  <dt>The web is for all people</dt>
+  <dd><p>Internationalization and localization are
+    non-optional. Accessibility is non-optional. Low bandwidth networks
+    and low specification equipment should be accounted for.</p></dd>
+
+  <dt>Security &amp; Privacy are non-optional</dt>
+  <dd><p>This is already well supported by the security &amp;
+    privacy self-check document.</p></dd>
+
+  <dt>The web must enable freedom of expression</dt>
+  <dd><p>The web should enable freedom of expression where it does not
+    contravene other human rights and should not enable state
+    censorship, surveillance or other practices that seek to limit this
+    freedom. This principle must be balanced with respect for other
+    human rights, and does not imply that individual services on the web
+    must therefore support all speech (for example, hate speech may
+    reasonably be denied a platform).</p></dd>
+
+  <dt>The web must enable researching the veracity and provenance of
+    information</dt>
+  <dd><p>and should also make it clear what the origin of information
+    is. The concept of origin is core to the web’s security model. New
+    web technologies should not subvert this architectural
+    plank.</p></dd>
+
+  <dt>The web must enhance individual agency</dt>
+  <dd><p>The web should empower the people using it, ahead of service
+    and software developers. The web should not be used in manipulative
+    manner, exacerbating isolation or addictive behaviors.</p></dd>
+
+  <dt>The web must be an environmentally sustainable platform</dt>
+  <dd><p>The web, as a whole, can be perceived as a big consumer of
+    power. New web technologies should not make this situation
+    worse. Power consumption should be considered as a factor in
+    introducing new technologies to the web.</p></dd>
+
+  <dt>The web is transparent</dt>
+  <dd><p>The web was built on a “view source” principle, currently
+    realised through robust developer tools built into many browsers. It
+    should always be possible to determine how a web app was built and
+    how the code works. Furthermore, it must be possible to audit and
+    inspect web applications and underlying software for security,
+    privacy or other considerations.</p></dd>
+
+  <dt>The web is multi-browser, multi-OS and multi-device </dt>
+  <dd><p>for example, web technologies should not lend themselves to
+    creation of web sites that work only in one browser. Content
+    provided by accessing a URL should yield a thematically coherent
+    experience when accessed from different devices and form
+    factors. There is an inherent benefit to the web ecosystem of
+    having multiple interoperable implementations.</p></dd>
+      
+  <dt>People should be able to render web content as they want</dt>
+  <dd><p>For example, users should be able to install fonts, style
+    sheets, screen readers, and blockers of unwanted content or
+    scripts. Through technologies such as browser extensions, people
+    must continue to be able to change web pages according to their
+    needs.</p></dd>
+
+</section>
+
     <section class="appendix">
       <h2>Acknowledgements</h2>
-      <p>
+      <p>Apart from members of the W3C TAG, Amy Dickens, Ada Cannon, Anne Curie.
       </p>
     </section>
+    
   </body>
 </html>
 
