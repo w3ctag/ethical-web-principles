@@ -1,119 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <title>W3C TAG Ethical Web Principles</title>
-    <script class="remove" src="https://www.w3.org/Tools/respec/respec-w3c">
-    </script>
-    <script class="remove">
+<meta charset="utf-8">
+<title>W3C TAG Ethical Web Principles</title>
+<script class="remove" src="https://www.w3.org/Tools/respec/respec-w3c">
+</script>
+<script class="remove">
 var respecConfig = {
-    specStatus: "draft-finding",
-    shortName: "ethical-web-principles",
-//    publishDate:  "2019-05-23",
-    //previousPublishDate:  "",
-    edDraftURI: "https://w3ctag.github.io/ethical-web-principles/",
-    canonicalURI: "https://www.w3.org/2001/tag/doc/ethical-web-principles/",
-    // lcEnd: "3000-01-01",
-    // crEnd: "3000-01-01",
-    editors: [{
-            name: "Daniel Appelquist",
-            company: "Samsung",
-        }, {
-            name: "Hadley Beeman",
-            company: "Invited Expert",
-        }
-    ],
-    wg: "Technical Architecture Group",
-    wgURI: "https://www.w3.org/2001/tag/",
-    wgPublicList: "www-tag",
-    wgPatentURI: "https://www.w3.org/2001/tag/disclosures",
-    otherLinks: [{
-            key: "Repository",
-            data: [{
-                    value: "We are on Github.",
-                    href: "https://github.com/w3ctag/ethical-web-principles"
-                }, {
-                    value: "File a bug.",
-                    href: "https://github.com/w3ctag/ethical-web-principles/issues"
-                }, {
-                    value: "Commit history.",
-                    href: "https://github.com/w3ctag/ethical-web-principles/commits/gh-pages"
-                }
-            ]
-        }
-    ],
-    inlineCSS: true,
-    noIDLIn: true,
-    noLegacyStyle: false,
-localBiblio:  {
-"ACM-CODE-OF-ETHICS": {
-title: "ACM Code of Ethics and Professional Conduct",
-href: "https://www.acm.org/code-of-ethics",
-publisher: "Association for Computing Machinery"
-},
+  specStatus: "draft-finding",
+  editors: [
+    {
+      name: "Daniel Appelquist",
+      company: "Samsung",
+    },
+    {
+      name: "Hadley Beeman",
+      company: "Invited Expert",
+    },
+  ],
+  group: "tag",
+  wgPublicList: "www-tag",
+  github: "w3ctag/ethical-web-principles",
+  format: "markdown",
+};
+</script>
+<body class="informative">
 
-"CONTRACT-FOR-THE-WEB": {
-title: "Contract for the Web",
-href: "https://contractfortheweb.org",
-publisher: "The Web Foundation"
-},
-
-"MOZILLA-MANIFESTO": {
-title: "Pledge for a Healthy Internet",
-href: "https://www.mozilla.org/en-US/about/manifesto/",
-publisher: "Mozilla",
-},
-
-"CoedEthics": {
-title: "Coed:Ethics — Building a New Conference in a New Area",
-href:
-"https://medium.com/@anne_e_currie/coed-ethics-building-a-new-conference-in-a-new-area-a7828e612e7",
-authors: [ "Anne Curie" ],
-},
-
-"UNHR" : {
-title: "UN Universal Declaration of Human Rights",
-href: "https://www.un.org/en/universal-declaration-human-rights/",
-publisher: "United Nations",
-},
-
-"DisabilityRights" : {
-title: "Convention on the Rights of Persons with Disabilities and Optional Protocol",
-href:
-"https://www.un.org/disabilities/documents/convention/convoptprot-e.pdf",
-publisher: "United Nations",
-},
-
-        }
-    };
-    </script>
-  </head>
-  <body class="informative">
-      <section id="sotd">
-      <p>
-        This document is a draft Technical Architecture Group (TAG) Finding.
-        It does not contain any normative content.
-      </p>
-      <p>
-        This document reflects the consensus of the TAG at the time of publication.
-        It will continue to evolve and the TAG will issue updates as often as needed.
-      </p>
-    </section>
-    <section id="abstract">
-      <h2>Abstract</h2>
-<p>
+<section id="abstract">
 The web should be a platform that helps people
 and provides a net positive social benefit.
 As we continue to evolve the web platform,
 we must therefore consider the ethical consequences of our work.
 The following document sets out ethical principles
 that will drive the TAG's continuing work in this direction.
-</p>
-    </section>
-    <section id="intro">
-      <h2>Introduction</h2>
-<p>
+</section>
+
+<section id="sotd">
+This document is a draft Technical Architecture Group (TAG) Finding.
+It does not contain any normative content.
+
+This document reflects the consensus of the TAG at the time of publication.
+It will continue to evolve and the TAG will issue updates as often as needed.
+</section>
+
+## Introduction {#intro}
+
 The web should empower an equitable, informed and interconnected society.
 It has been, and should continue to be designed
 to enable communication and knowledge-sharing for everyone.
@@ -126,8 +55,7 @@ and provides a net positive social benefit.
 As we continue to evolve the web platform,
 we must therefore consider the ethical implications of our work.
 The web must be for good.
-</p>
-<p>
+
 In order for the web to continue to be beneficial to society,
 we need to include more ethical thinking when we build
 web technologies, applications and sites.
@@ -136,17 +64,18 @@ HTML, CSS and JavaScript are often thought of as the web's core set of technolog
 but there are a raft of other technologies, standards, languages and APIs that come together to form the "web platform."
 One of the web platform's differentiators has always been a strong ethical framework;
 for example an emphasis on
-<a href="https://www.w3.org/International/">internationalization</a>,
-<a href="https://www.w3.org/WAI/">accessibility</a>,
-<a href="https://www.w3.org/Privacy/">privacy</a>, and
-<a href="https://www.w3.org/Security/">security</a>.
+[internationalization](https://www.w3.org/International/)
+[accessibility](https://www.w3.org/WAI/)
+[privacy](https://www.w3.org/Privacy/)
+[security](https://www.w3.org/Security/)
+
+
 Web technologies are also offered
-<a href="https://www.w3.org/Consortium/Patent-Policy/">royalty free</a>
+[royalty free](https://www.w3.org/Consortium/Patent-Policy/)
 to enable open source implementation,
 arguably an ethical choice that has been a factor in its success as a platform.
 These are often cited as some of the strengths of the web.
-</p>
-<p>
+
 The architecture of the web is designed with
 the important notion of different classes of application that retrieve and process content,
 and represent the needs of its users.
@@ -158,35 +87,37 @@ by allowing the person using the web to choose
 a browser, search engine or other application
 that best meets their needs
 (for example, with strong privacy protections).
-</p>
-<p>
+
 The web should also support human rights, dignity and personal agency.
 We need to put internationally recognized human rights at the core of the web platform.
 And we need to promote ethical thinking across the web industry
 to reinforce this approach.
-</p>
-<p>
+
 The purpose of this document is
 to inform TAG review of new specifications
 and to inform other documents such as the
 [[[Design-Principles]]], [[[security-privacy-questionnaire]]]
 or other similar checklists and sets of principles used by specification authors and editors.
 It also serves to raise awareness of the ethical responsibilities of web makers.
-</p>
-</section>
-<section id="principles">
-      <h2>Principles</h2>
+
+
+## Principles
+
 <dl>
-  <dt><a id="oneweb" href="#oneweb">There is one web</a></dt>
-  <dd><p>
+<dt><dfn id="oneweb" data-export="">
+  There is one web
+</dfn></dt>
+<dd>
 When we are adding new web technologies and platforms,
 we will build them to cross regional and national boundaries.
 People in one location should be able to view web pages
 from anywhere that is connected to the web.
-  </p></dd>
+</dd>
 
-  <dt><a id="noharm" href="#noharm">The web should not cause harm to society</a></dt>
-  <dd><p>
+<dt><dfn id="noharm" data-export="">
+  The web should not cause harm to society
+</dfn></dt>
+<dd>
 When we are adding a feature or technology to the web,
 we will consider what harm it could do to society or groups,
 especially vulnerable people.
@@ -196,14 +127,16 @@ in line with the
 <a data-cite="design-principles#priority-of-constituencies">priority of constituencies</a>.
 We will build new web technologies in a collaborative matter
 according to open processes
-(for example, the <a href="https://www.w3.org/Consortium/Process/">W3C process</a>).
+(for example, the [W3C process](https://www.w3.org/Consortium/Process/)
 Furthermore, by adhering to codes of conduct
-(such as the W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>)
+(such as the W3C [Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/))
 we will ensure the requirements and views of marginalized communities are respected.
-  </p></dd>
+</dd>
 
-  <dt><a id="community" href="#community">The web must support healthy community and debate</a></dt>
-  <dd><p>
+<dt><dfn id="community" data-export="">
+  The web must support healthy community and debate
+</dfn></dt>
+<dd>
 We are building technologies and platforms for distributing ideas,
 for virtual interaction,
 and for mass collaboration on any topic.
@@ -215,10 +148,12 @@ We will consider these risks in the work we do,
 and will build web technologies and platforms
 that respect individuals' rights
 and provide features to empower them against dangers like these.
-  </p></dd>
+</dd>
 
-  <dt><a id="allpeople" href="#allpeople">The web is for all people</a></dt>
-  <dd><p>
+<dt><dfn id="allpeople" data-export="">
+  The web is for all people
+</dfn></dt>
+<dd>
 We will build internationalization and localization capabilities
 into our specs and websites.
 The web platform and the tools we use to create it
@@ -229,10 +164,12 @@ and the platform should enable a fully accessible end user experience.
 Accessibility involves a wide range of disabilities,
 including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities.
 We must build for users on low bandwidth networks and low specification equipment.
-  </p></dd>
+</dd>
 
-  <dt><a id="privacy" href="#privacy">Security and privacy are essential</a></dt>
-  <dd><p>
+<dt><dfn id="privacy" data-export="">
+  Security and privacy are essential
+</dfn></dt>
+<dd>
 We will write specs and build platforms in line with our responsibility to our users,
 knowing that we are making decisions
 that change their ability to protect their personal data.
@@ -243,10 +180,12 @@ We will start by creating web technologies
 that create as few risks as possible,
 and will make sure our users understand
 what they are risking in using our services.
-  </p></dd>
+</dd>
 
-  <dt><a id="expression" href="#expression">The web must enable freedom of expression</a></dt>
-  <dd><p>
+<dt><dfn id="expression" data-export="">
+  The web must enable freedom of expression
+</dfn></dt>
+<dd>
 We will create web technologies and platforms
 that encourage free expression,
 where that does not contravene other human rights.
@@ -255,19 +194,23 @@ or other practices that seek to limit this freedom.
 This principle must be balanced with respect for other human rights,
 and does not imply that individual services on the web must therefore support all speech.
 (For example: hate speech, harassment or abuse may reasonably be denied a platform).
-  </p></dd>
+</dd>
 
-  <dt><a id="verify" href="#verify">The web must make it possible for people to verify the information they see</a></dt>
-  <dd><p>
+<dt><dfn id="verify" data-export="">
+  The web must make it possible for people to verify the information they see
+</dfn></dt>
+<dd>
 We have a responsibility to build web technologies to counter misinformation,
 allowing information sources to be traceable and facts to be checkable.
 The concept of origin and source is core to the web's security model.
 We will make sure the new web technologies we create
 do not work against this architectural principle.
-  </p></dd>
+</dd>
 
-  <dt><a id="control" href="#control">The web must enhance individuals' control and power</a></dt>
-  <dd><p>
+<dt><dfn id="control" data-export="">
+  The web must enhance individuals' control and power
+</dfn></dt>
+<dd>
 We recognize that web technologies can be used by developers
 to manipulate people, complicate isolation and encourage addictive behaviors.
 We recognize these risks
@@ -278,18 +221,22 @@ that minimizes single points of failure and single points of control.
 We will also build Web technologies for individual developers
 as well for developers at large companies and organizations.
 The web should enable do-it-yourself developers.
-  </p></dd>
+</dd>
 
-  <dt><a id="sustainable" href="#sustainable">The web must be an environmentally sustainable platform</a></dt>
-  <dd><p>
+<dt><dfn id="sustainable" data-export="">
+  The web must be an environmentally sustainable platform
+</dfn></dt>
+<dd>
 The web, as a whole, is a big source of carbon emissions, because it is a big consumer of power.
 New web technologies should not make this situation worse.
 We will consider power consumption and the resulting emissions
 when we introduce new technologies to the web.
-  </p></dd>
+</dd>
 
-  <dt><a id="transparent" href="#transparent">The web is transparent</a></dt>
-  <dd><p>
+<dt><dfn id="transparent" data-export="">
+  The web is transparent
+</dfn></dt>
+<dd>
 The web was built on a "view source" principle,
 currently realized through robust developer tools built into many browsers.
 We will always make sure it is possible
@@ -298,10 +245,12 @@ and how the code works.
 Furthermore, we will always make sure it is possible
 to audit and inspect web applications and underlying software
 for security, privacy or other considerations.
-  </p></dd>
+</dd>
 
-  <dt><a id="multi" href="#multi">The web is multi-browser, multi-OS and multi-device</a></dt>
-  <dd><p>
+<dt><dfn id="multi" data-export="">
+  The web is multi-browser, multi-OS and multi-device
+</dfn></dt>
+<dd>
 We will not create web technologies that encourage the creation of websites that work only in one browser.
 We expect that content provided by accessing a URL
 <a data-cite="mobile-bp#tc">should yield a thematically consistent experience</a>
@@ -309,21 +258,18 @@ when the user is accessing it from different devices.
 The constant competition and variety of choices for our users
 that come from having multiple interoperable implementations
 means the web ecosystem is constantly improving.
-  </p></dd>
+</dd>
 
-  <dt><a id="render" href="#render">People should be able to render web content as they want</a></dt>
-  <dd><p>
+<dt><dfn id="render" data-export="">
+  People should be able to render web content as they want
+</dfn></dt>
+<dd>
 For example, users should be able to install style sheets,
 assistive browser extensions,
-and blockers of unwanted content or scripts or autoplayed videos.
+and blockers of unwanted content or scripts or auto-played videos.
 Through technologies such as browser extensions,
 people must continue to be able to change web pages according to their needs.
 We will build platforms and write specs
 that respect the user's authority,
-and will create user agents to represent those preferences on the user's behalf. </li>
-  </p></dd>
-
-</section>
-
-  </body>
-</html>
+and will create user agents to represent those preferences on the user's behalf.
+</dd>
