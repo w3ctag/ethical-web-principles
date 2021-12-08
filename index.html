@@ -52,36 +52,34 @@ It will continue to evolve and the TAG will issue updates as often as needed.
 ## Introduction {#intro}
 
 The web should empower an equitable, informed and interconnected society.
-It has been, and should continue to be designed
+It has been, and should continue to be, designed
 to enable communication and knowledge-sharing for everyone.
+In order for the web to continue to be beneficial to society,
+we need to include ethical thinking when we build
+web technologies, applications, and sites.
+The web is made up of a number of technologies and technical standards.
+HTML, CSS and JavaScript are often thought of as the web's core set of technologies
+but there are a raft of other technologies, standards,
+languages and APIs that come together to form the "web platform."
+
 In the 30 years since development of the web began,
-it has become clear that the web platform can often be used in ways that subvert that mission.
-Furthermore, web technologies can be used to cause harm,
-which is not in keeping with the spirit of this social mission.
+it has become clear that the web platform can often be used in ways that subvert its original mission,
+or even be used to cause harm.
 The web should be a platform that helps people
 and provides a net positive social benefit.
 As we continue to evolve the web platform,
 we must therefore consider the ethical implications of our work.
 The web must be for good.
 
-In order for the web to continue to be beneficial to society,
-we need to include more ethical thinking when we build
-web technologies, applications and sites.
-The web is made up of a number of technologies and technical standards.
-HTML, CSS and JavaScript are often thought of as the web's core set of technologies
-but there are a raft of other technologies, standards, languages and APIs that come together to form the "web platform."
 One of the web platform's differentiators has always been a strong ethical framework;
 for example an emphasis on
-[internationalization](https://www.w3.org/International/)
-[accessibility](https://www.w3.org/WAI/)
-[privacy](https://www.w3.org/Privacy/)
-[security](https://www.w3.org/Security/)
-
-
+[internationalization](https://www.w3.org/International/),
+[accessibility](https://www.w3.org/WAI/),
+[privacy](https://www.w3.org/Privacy/), and
+[security](https://www.w3.org/Security/).
 Web technologies are also offered
 [royalty free](https://www.w3.org/Consortium/Patent-Policy/)
-to enable open source implementation,
-arguably an ethical choice that has been a factor in its success as a platform.
+to enable open source implementation.
 These are often cited as some of the strengths of the web.
 
 The architecture of the web is designed with
@@ -90,9 +88,8 @@ and represent the needs of the application's users.
 This includes web browsers,
 web-hosted applications such as search engines,
 and software that acts on web resources.
-This lends itself well towards this more ethical approach
-by allowing the person using the web to choose
-a browser, search engine or other application
+This lends itself well towards empowering people
+by allowing them to choose the browser, search engine, or other application
 that best meets their needs
 (for example, with strong privacy protections).
 
@@ -114,7 +111,6 @@ is being applied, the expected audience(s) for the technology,
 who the technology benefits and who it may disadvantage,
 and any power dynamics involved (see also the
 <a data-cite="design-principles#priority-of-constituencies">priority of constituencies</a>).
-
 
 The purpose of this document is
 to inform TAG review of new specifications
@@ -146,17 +142,18 @@ The web should not cause harm to society
   <p>
 When we are adding a feature or technology to the web,
 we will consider what harm it could do to society or groups,
-especially vulnerable people.
+especially to vulnerable people.
 We will prioritize potential benefits for web users over potential benefits to web developers,
 content providers, user agents, advertisers or others in the ecosystem,
 in line with the
 <a data-cite="design-principles#priority-of-constituencies">priority of constituencies</a>.
-We will build new web technologies in a collaborative matter
+We will ensure the requirements and views of marginalized communities
+and underrepresented groups are heard and respected.
+We will build new web technologies in a collaborative manner
 according to open processes
-(for example, the <a href="https://www.w3.org/Consortium/Process/">W3C process</a>).
-Furthermore, by adhering to codes of conduct
-(such as the W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>)
-we will ensure the requirements and views of marginalized communities are respected.
+(for example, the <a href="https://www.w3.org/Consortium/Process/">W3C process</a>),
+and adhering to codes of conduct
+(such as the W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>).
   </p>
 </section>
 
@@ -170,8 +167,8 @@ for virtual interaction,
 and for mass collaboration on any topic.
 While those tools can be used for good,
 they can also be used for spreading misinformation,
-virtual and offline harassment,
-and building communities for doxxing and persecution.
+revealing private personal information (doxing),
+harassment, and persecution.
 We will consider these risks in the work we do,
 and will build web technologies and platforms
 that respect individuals' rights
@@ -184,16 +181,15 @@ and provide features to empower them against dangers like these.
 The web is for all people
   </h3>
   <p>
-We will build internationalization and localization capabilities
-into our specs and websites.
-The web platform and the tools we use to create it
-must be accessible to people with disabilities.
-We all should be able to meaningfully participate
-in the creation of specs, user agents and content,
+Anyone should be able to meaningfully participate
+in the creation of specifications, user agents, and content,
 and the platform should enable a fully accessible end user experience.
-Accessibility involves a wide range of disabilities,
+We will build internationalization and localization capabilities
+into our specifications and websites.
+We will accommodate people on low bandwidth networks and with low specification equipment.
+The web platform and the tools we use to create it
+must be accessible to people with disabilities,
 including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities.
-We must build for people on low bandwidth networks and low specification equipment.
   </p>
 </section>
 
@@ -202,16 +198,16 @@ We must build for people on low bandwidth networks and low specification equipme
 Security and privacy are essential
   </h3>
   <p>
-We will write specs and build platforms in line with our responsibility to people who use the web,
-knowing that we are making decisions
-that change their ability to protect their personal data.
+When we add features to the web platform,
+we are making decisions
+that may change the ability of people to protect their personal data.
 This data includes their conversations,
 their financial transactions
 and how they live their lives.
 We will start by creating web technologies
 that create as few risks as possible,
 and will make sure people understand
-what they are risking in using our services.
+what risks they are taking when they the web.
   </p>
 </section>
 
@@ -300,13 +296,15 @@ for security, privacy or other considerations.
 The web is multi-browser, multi-OS and multi-device
   </h3>
   <p>
-We will not create web technologies that encourage the creation of websites that work only in one browser.
+We will not create web technologies that encourage the creation of websites
+that work only in one browser,
+or only on particular hardware.
 We expect that content provided by accessing a URL
 <a data-cite="mobile-bp#tc">should yield a thematically consistent experience</a>
 when someone is accessing it from different devices.
-The constant competition and variety of choices
-that come from having multiple interoperable implementations
-means the web ecosystem is constantly improving.
+The existence of multiple interoperable implementations
+enables competition, and thus a variety of choices
+for web users.
   </p>
 </section>
 
@@ -315,13 +313,12 @@ means the web ecosystem is constantly improving.
 People should be able to render web content as they want
   </h3>
   <p>
+People must be able to change web pages according to their needs.
 For example, people should be able to install style sheets,
 assistive browser extensions,
 and blockers of unwanted content or scripts or auto-played videos.
-Through technologies such as browser extensions,
-people must continue to be able to change web pages according to their needs.
-We will build platforms and write specs
-that respect peoples' authority,
-and will create user agents to represent those preferences on someone's behalf.
+We will build features and write specifications
+that respect peoples' agency,
+and will create user agents to represent those preferences on the web user's behalf.
   </p>
 </section>
